@@ -1,11 +1,11 @@
 <script>
-import Projects from './components/Projects.vue'
-import ProjectCard from './components/ProjectCard.vue'
+//import Projects from './components/Projects.vue'
+//import ProjectCard from './components/ProjectCard.vue'
 
 export default{
   components: {
-    Projects,
-    ProjectCard
+    //Projects,
+    //ProjectCard
   }
 }
 
@@ -13,7 +13,9 @@ export default{
 
 <template>
   <div>
-     <ProjectCard />
+    <main>
+     <router-view></router-view>      
+    </main>
   </div>
 </template>
 
