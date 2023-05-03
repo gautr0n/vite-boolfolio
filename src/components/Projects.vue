@@ -18,6 +18,8 @@ import axios from 'axios'
                 axios.get('http://127.0.0.1:8000/api/projects')
                 .then(res => {
                     console.log(res)
+                    const { results } = res.data
+                    this.projects = results
                 })
                 .catch(err => {
                     console.log(err)
